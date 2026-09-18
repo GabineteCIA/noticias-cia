@@ -1,0 +1,18 @@
+SUBIR ESTOS ARCHIVOS AL REPOSITORIO noticias-cia:
+
+1. index.html
+2. logo-cia.png
+3. iso-9001.png
+4. logo-muci.png
+5. obra-losa-e2.jpeg
+6. cargamento-e2-01.png
+7. cargamento-e2-02.png
+8. cargamento-e2-03.png
+9. cargamento-e2-04.png
+10. cargamento-e2-05.png
+
+IMPORTANTE:
+- Reemplazar el index.html actual por este nuevo.
+- Subir las imagenes con estos nombres exactos.
+- Mantener todos los archivos en la raiz del repositorio.
+- Luego confirmar cambios en GitHub.

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noticias CIA S.A. | Losa E2 MuCi</title>
+  <title>Noticias CIA S.A. | Canal MuCi</title>
 
-  <meta property="og:title" content="Noticias CIA S.A. | Manana se realizara el cargamento de la Losa E2 en la obra MuCi">
-  <meta property="og:description" content="El operativo contempla aproximadamente 260 m3 de hormigon, 60 colaboradores y una duracion estimada de 7 horas.">
-  <meta property="og:image" content="https://noticias-cia.netlify.app/obra-losa-e2.jpeg">
+  <meta property="og:title" content="Noticias CIA S.A. | Canal de noticias de la obra MuCi">
+  <meta property="og:description" content="Seguimiento técnico, novedades, avances y publicaciones del Gabinete Técnico de Fiscalización CIA S.A.">
+  <meta property="og:image" content="https://noticias-cia.netlify.app/cargamento-e2-01.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://noticias-cia.netlify.app/">
 
@@ -20,9 +20,12 @@
       --gris: #667085;
       --fondo: #f3f6fa;
       --linea: #e4e8ef;
+      --blanco: #ffffff;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -32,7 +35,7 @@
     }
 
     .topbar {
-      background: #ffffff;
+      background: var(--blanco);
       border-bottom: 1px solid var(--linea);
       padding: 14px 18px;
     }
@@ -77,10 +80,10 @@
 
     header {
       background:
-        linear-gradient(90deg, rgba(18, 54, 93, .92), rgba(15, 95, 136, .78)),
-        url("obra-losa-e2.jpeg") center/cover no-repeat;
+        linear-gradient(90deg, rgba(18, 54, 93, .94), rgba(15, 95, 136, .80)),
+        url("cargamento-e2-01.png") center/cover no-repeat;
       color: white;
-      padding: 54px 18px 64px;
+      padding: 58px 18px 76px;
     }
 
     .hero {
@@ -102,9 +105,9 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(31px, 6vw, 54px);
-      line-height: 1.05;
-      max-width: 880px;
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.04;
+      max-width: 900px;
     }
 
     .subtitle {
@@ -117,16 +120,31 @@
 
     main {
       max-width: 1120px;
-      margin: -34px auto 36px;
+      margin: -38px auto 36px;
       padding: 0 18px;
     }
 
+    .channel-title {
+      margin: 0 0 16px;
+      color: var(--azul);
+      font-size: 26px;
+    }
+
+    .news-list {
+      display: grid;
+      gap: 26px;
+    }
+
     .article-card {
-      background: #ffffff;
+      background: var(--blanco);
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 18px 50px rgba(15, 38, 70, .16);
+      box-shadow: 0 18px 50px rgba(15, 38, 70, .14);
       border: 1px solid var(--linea);
+    }
+
+    .article-card.secondary {
+      box-shadow: none;
     }
 
     .main-photo {
@@ -206,6 +224,22 @@
       font-size: 22px;
     }
 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--linea);
+      display: block;
+    }
+
     .footer {
       max-width: 1120px;
       margin: 0 auto;
@@ -238,14 +272,15 @@
       }
 
       header {
-        padding: 38px 18px 54px;
+        padding: 40px 18px 58px;
       }
 
       .content {
         padding: 22px 18px;
       }
 
-      .info-grid {
+      .info-grid,
+      .gallery {
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -264,72 +299,119 @@
 
   <header>
     <div class="hero">
-      <div class="tag">Noticias CIA S.A. | Fiscalizacion de obras</div>
-      <h1>Hoy jueves 17 de setiembre se realizará el cargamento de la Losa E2 en la obra MuCi</h1>
+      <div class="tag">Canal de noticias | Fiscalización CIA S.A.</div>
+      <h1>Noticias de la obra del Museo de Ciencias MuCi</h1>
       <p class="subtitle">
-        El operativo de hormigonado esta previsto para iniciar a las 09:00 h,
-        con una duracion estimada de 7 horas continuas.
+        Publicaciones técnicas, avances de obra, registros de campo y comunicados vinculados al seguimiento de la fiscalización.
       </p>
     </div>
   </header>
 
   <main>
-    <article class="article-card">
-      <img class="main-photo" src="obra-losa-e2.jpeg" alt="Vista aerea de la obra del Museo de Ciencias MuCi">
+    <h2 class="channel-title">Últimas publicaciones</h2>
 
-      <div class="content">
-        <div class="meta">17 de septiembre de 2026 | Museo de Ciencias MuCi</div>
-        <h2>Plan operativo para el cargamento de hormigon de la Losa E2</h2>
+    <div class="news-list">
+      <article class="article-card">
+        <img class="main-photo" src="cargamento-e2-01.png" alt="Panel de seguimiento online del cargamento de la Losa E2">
 
-        <p class="lead">
-          El dia de hoy, jueves 17 de setiembre esta previsto el cargamento de hormigon de la Losa E2 en la obra del Museo de Ciencias MuCi.
-          Segun el plan operativo, el trabajo contempla aproximadamente 260 m3 de hormigon, la participacion
-          de 60 colaboradores y una duracion estimada de 7 horas continuas.
-        </p>
+        <div class="content">
+          <div class="meta">18 de septiembre de 2026 | Museo de Ciencias MuCi</div>
+          <h2>Se realizó con éxito el cargamento de hormigón de la Losa E2 en la obra MuCi</h2>
 
-        <div class="info-grid">
-          <div class="info">
-            <strong>09:00 h</strong>
-            <span>Inicio previsto del operativo</span>
+          <p class="lead">
+            El día de ayer se realizó con éxito el cargamento de hormigón de la Losa E2 en la obra del Museo de Ciencias MuCi,
+            alcanzando un avance importante dentro del proceso estructural del proyecto.
+          </p>
+
+          <p>
+            El operativo se desarrollo conforme a la planificación prevista, con la participación de los equipos de obra,
+            seguridad, logística y fiscalización, permitiendo completar una jornada clave para la continuidad de los trabajos.
+          </p>
+
+          <div class="info-grid">
+            <div class="info">
+              <strong>Losa E2</strong>
+              <span>Sector intervenido</span>
+            </div>
+            <div class="info">
+              <strong>274,5 m3</strong>
+              <span>Volumen registrado en el seguimiento</span>
+            </div>
+            <div class="info">
+              <strong>31</strong>
+              <span>Camiones mixer registrados</span>
+            </div>
+            <div class="info">
+              <strong>Online</strong>
+              <span>Publicaciones y transmision en vivo</span>
+            </div>
           </div>
-          <div class="info">
-            <strong>260 m3</strong>
-            <span>Volumen estimado de hormigon</span>
+
+          <h3 class="section-title">Seguimiento técnico y comunicación</h3>
+          <p>
+            Desde el Gabinete Técnico de Fiscalización CIA S.A. se realizaron publicaciones online sobre la situación del cargamento,
+            además de transmisiones en vivo a través de plataformas digitales como YouTube, con el objetivo de acompañar y comunicar
+            el desarrollo de la jornada en tiempo real.
+          </p>
+
+          <div class="note">
+            La jornada fue acompañada con registros de campo, control de avance, seguimiento de seguridad y comunicación digital del operativo.
           </div>
-          <div class="info">
-            <strong>60</strong>
-            <span>Colaboradores aproximadamente</span>
-          </div>
-          <div class="info">
-            <strong>7 h</strong>
-            <span>Duracion estimada de la actividad</span>
+
+          <div class="gallery">
+            <img src="cargamento-e2-02.png" alt="Trabajos nocturnos durante el cargamento de la Losa E2">
+            <img src="cargamento-e2-03.png" alt="Equipo de obra y fiscalización durante el operativo">
+            <img src="cargamento-e2-04.png" alt="Control de campo durante el cargamento de hormigón">
+            <img src="cargamento-e2-05.png" alt="Registro nocturno del operativo de cargamento">
           </div>
         </div>
+      </article>
 
-        <h3 class="section-title">Coordinacion y seguridad</h3>
-        <p>
-          El operativo incluye zona de mixer y bomba, acceso controlado, puesto de enfermeria,
-          charla previa de seguridad, uso obligatorio de EPI&rsquo;S (Equipos de Proteccion Individual)
-          y acompanamiento tecnico en campo.
-        </p>
+      <article class="article-card secondary">
+        <img class="main-photo" src="obra-losa-e2.jpeg" alt="Vista aerea de la obra del Museo de Ciencias MuCi">
 
-        <div class="note">
-          Desde la fiscalizacion se realizara el seguimiento de las condiciones generales de ejecucion,
-          seguridad, coordinacion y desarrollo del cargamento.
+        <div class="content">
+          <div class="meta">17 de septiembre de 2026 | Museo de Ciencias MuCi</div>
+          <h2>Plan operativo para el cargamento de hormigón de la Losa E2</h2>
+
+          <p class="lead">
+            Se informó el operativo previsto para el cargamento de hormigón de la Losa E2 en la obra del Museo de Ciencias MuCi.
+            El trabajo contemplaba aproximadamente 260 m3 de hormigón, la participación de 60 colaboradores y una duracion estimada
+            de 7 horas continuas.
+          </p>
+
+          <div class="info-grid">
+            <div class="info">
+              <strong>09:00 h</strong>
+              <span>Inicio previsto del operativo</span>
+            </div>
+            <div class="info">
+              <strong>260 m3</strong>
+              <span>Volumen estimado de hormigón</span>
+            </div>
+            <div class="info">
+              <strong>60</strong>
+              <span>Colaboradores aproximadamente</span>
+            </div>
+            <div class="info">
+              <strong>7 h</strong>
+              <span>Duración estimada de la actividad</span>
+            </div>
+          </div>
+
+          <h3 class="section-title">Coordinacion y seguridad</h3>
+          <p>
+            El operativo incluyó zona de mixer y bomba, acceso controlado, puesto de enfermeria,
+            charla previa de seguridad, uso obligatorio de EPI&rsquo;S (Equipos de Protección Individual)
+            y acompañamiento técnico en campo.
+          </p>
         </div>
-
-        <h3 class="section-title">Alcance del acompanamiento</h3>
-        <p>
-          La fiscalizacion acompanara el desarrollo del operativo verificando las condiciones generales
-          de trabajo, la coordinacion de campo, el cumplimiento de los criterios preventivos y el registro
-          de los principales hitos de la jornada.
-        </p>
-      </div>
-    </article>
+      </article>
+    </div>
   </main>
 
   <div class="footer">
-    Noticias CIA S.A. - Compania de Ingenieros Asociados
+    Noticias CIA S.A. - Compañía de Ingenieros Asociados
   </div>
 </body>
 </html>
